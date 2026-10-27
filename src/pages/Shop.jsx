@@ -3,7 +3,7 @@ import { Store } from "../context/MyContext";
 import ShopCard from "../components/ShopCard";
 // import { useNavigate } from "react-router";
 
-const SHop = () => {
+const Shop = () => {
   const { allProductsData = [] } = useContext(Store);
 
 const [search, setSearch] = useState("");
@@ -219,4 +219,4 @@ const filteredProducts = allProductsData
   );
 };
 
-export default SHop;
+export default Shop;
