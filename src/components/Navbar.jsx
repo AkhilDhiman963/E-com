@@ -101,8 +101,8 @@ export default function Navbar({
 
   if (pathname === "/login" || pathname === "/register") return null;
 
-  let user = JSON.parse(localStorage.getItem("currentUser"));
-  let userName = user.name || "user";
+  // let user = JSON.parse(localStorage.getItem("currentUser"));
+  let userName = JSON.parse(localStorage.getItem("currentUser")).name || "user";
 
   return (
     <header className="w-full  bg-[#0d0d0d] font-sans text-white">
